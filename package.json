@@ -1,15 +1,19 @@
 {
-  "name": "keyholeproject",
+  "name": "@paypalcorp/keyholeproject",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.1",
+    "loadash": "^1.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
+    "twitter-text": "^3.1.0",
+    "web-vitals": "^1.1.2",
+    "cors": "^2.8.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,5 +38,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
