@@ -19,6 +19,7 @@ function App() {
     axios
       .get(`${APIURL}?term=${queryTerm}&next_token=${nextToken}`)
       .then((res) => {
+        console.log("queryTerm", queryTerm);
         const next_token = res.data?.meta?.next_token || "";
         const prev_token = res.data?.meta?.prev_token || "";
         // this just makes the data easier to work with since API returns user object in a different array
@@ -65,8 +66,8 @@ function App() {
 
   function handleCahange(e) {
     const { value } = e.target;
+    delayedRequest(value);
     setQueryTerm(value);
-    delayedRequest(queryTerm);
   }
 
   function handleNextPage() {
